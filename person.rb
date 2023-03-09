@@ -9,6 +9,7 @@ class Person < Nameable
     @name = name
     @age = age
     @parent_permission = parent_permission
+    @rentals = []
   end
 
   def correct_name
@@ -23,7 +24,11 @@ class Person < Nameable
     of_age? || @parent_permission
   end
 
-  attr_reader :id
+  def add_rental(book, date)
+    Rental.new(date, book, self)
+  end
+
+  attr_reader :id, :rentals
   attr_accessor :name, :age
   private :of_age?
 end

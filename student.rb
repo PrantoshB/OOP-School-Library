@@ -9,4 +9,11 @@ class Student < Person
   def play_hooky
     '¯(ツ)/¯'
   end
+
+  def classroom(classroom)
+    @classroom = classrom
+    classroom.students.push(self)
+  end
+
+  attr_accessor :classroom
 end
