@@ -11,9 +11,7 @@ class Student < Person
   end
 
   def classroom(classroom)
-    @classroom = classrom
+    @classroom = classroom
     classroom.students.push(self)
   end
-
-  attr_accessor :classroom
 end
