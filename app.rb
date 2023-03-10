@@ -12,37 +12,6 @@ class App
     @rentals = []
   end
 
-  def run
-    puts 'Welcome to School Library App!'
-    loop do
-      case option
-      when '1'
-        list_books
-      when '2'
-        list_people
-      when '3'
-        create_person
-      when '4'
-        create_book
-      when '5'
-        create_rental
-      when '6'
-        list_rentals
-      when '7'
-        break
-      else
-        puts 'That is not a valid option'
-      end
-
-      puts ' '
-
-      puts 'Press any key to continue'
-      gets.chomp
-    end
-
-    puts 'Thank you for using this app!'
-  end
-
   def list_books
     if @books.empty?
       puts 'There are no books yet'
