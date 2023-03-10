@@ -87,7 +87,6 @@ class App
   end
 
   def create_student
-
     print 'Name:'
     name = gets.chomp
 
@@ -103,7 +102,6 @@ class App
   end
 
   def create_teacher
-
     print 'Specialization:'
     specialization = gets.chomp
 
