@@ -130,6 +130,12 @@ To run tests, run the following command:
 - Twitter: [@prantalks](https://twitter.com/prantalks)
 - LinkedIn: [Prantosh Biswas](https://linkedin.com/in/prantosh)
 
+👤 **Gaurav Gangwar**
+
+- GitHub: [@githubhandle](https://github.com/gauravgangwarweb)
+- Twitter: [@twitterhandle](https://twitter.com/GauravGangwar51)
+- LinkedIn: [LinkedIn](https://linkedin.com/in/gauravgangwarweb)
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- FUTURE FEATURES -->
