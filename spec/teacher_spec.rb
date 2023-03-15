@@ -13,7 +13,6 @@ describe Teacher do
       expect(teacher.age).to eq(30)
     end
 
-
     it 'should return correct data' do
       expect(teacher.can_use_services?).to eq true
     end

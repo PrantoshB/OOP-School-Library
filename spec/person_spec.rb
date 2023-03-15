@@ -1,6 +1,5 @@
 require './person'
 
-
 describe Person do
   person = Person.new(20, 'Mark')
 
