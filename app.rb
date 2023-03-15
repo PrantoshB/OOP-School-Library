@@ -42,21 +42,6 @@ class App
     end
   end
 
-  def create_person
-    puts 'Do you want to  create a student (1) or a teacher(2)?'
-    input_result = gets.chomp.to_i
-
-    case input_result
-    when 1
-      create_student
-    when 2
-      create_teacher
-
-      display_people
-
-    end
-  end
-
   def create_student
     print 'Name:'
     name = gets.chomp
@@ -130,9 +115,9 @@ class App
       book_index = gets.chomp.to_i
 
       puts 'Select a person from the following list by number (not ID)'
-      
+
       @people.each_with_index do |person, index|
-        puts "#{index}) [#{person['class']}] Name: #{person['name']}, ID: #{person['id']}, Age: #{person['age']}"
+        puts "#{index}) Name: #{person['name']}, ID: #{person['id']}, Age: #{person['age']}"
       end
 
       person_index = gets.chomp.to_i
