@@ -31,4 +31,14 @@ class Person < Nameable
   attr_reader :id, :rentals
   attr_accessor :name, :age
   private :of_age?
+
+  def to_h
+    {
+      age: @age,
+      name: @name,
+      parent_permission: @parent_permission,
+      id: @id,
+      rentals: @rentals.map(&:to_h)
+    }
+  end
 end
