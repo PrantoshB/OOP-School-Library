@@ -8,7 +8,7 @@ require './data/preservedata'
 
 class App
   def initialize
-    @people = []
+    @people = load_data('./data/people.json') || []
     @books = []
     @rentals = []
   end
